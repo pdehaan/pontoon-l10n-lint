@@ -20,6 +20,17 @@ npx pdehaan/pontoon-l10n-lint --pontoon-project=firefox-monitor-website --produc
 }
 ```
 
+## CONFIGS
+
+| ENV | CLI | DESCRIPTION
+|:----|:----|:-----------
+| &nbsp; | <kbd>--init</kbd> | Pipe sample config file to STDOUT.
+| `PONTOON_CONFIG` | <kbd>--pontoon-config</kbd> | Path to config file. NOTE: Sample config can be generated using the `--init` arg.
+| `PONTOON_PROJECT` | <kbd>--pontoon-project</kbd> | Name of the project on Pontoon.
+| `PONTOON_MIN_PCT` | <kbd>--pontoon-min-pct</kbd> | Minimum Pontoon translation percentage to be considered for enabling on production.
+| `PRODUCTION_LOCALES` | <kbd>--production-locales</kbd> | An array of locales currently supported on production.
+| `EXTRA_LOCALES` | <kbd>--extra-locales</kbd> | An array of locales supported on production, but not in Pontoon.
+
 ## Creating a config file
 
 If you want to create a config file to store your variables (versus defining an unweildy list of CLI arguments or ENV vars), you can use the `--init` flag (for example: <kbd>npx pdehaan/pontoon-l10n-lint --init</kbd>) which will write out a config object to STDOUT (which can easily be piped to an external file by appending `> .l10n-lint.json` to the previous `--init` command):

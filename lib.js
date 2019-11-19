@@ -3,12 +3,6 @@
 const pontoonql = require("pontoonql");
 const diff = require("simple-array-diff");
 
-// const cfg = require("./cfg");
-
-// const prodLocales = listToArray(
-//   "cak,cs,cy,da,de,el,en,en-CA,en-GB,es-AR,es-CL,es-ES,es-MX,fi,fr,fy-NL,hu,kab,ia,id,it,ja,nl,nn-NO,pt-BR,pt-PT,ro,ru,sk,sl,sq,sv-SE,tr,uk,vi,zh-CN,zh-TW"
-// );
-
 module.exports = {
   lint,
   listToArray
