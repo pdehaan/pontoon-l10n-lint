@@ -10,7 +10,7 @@
     "url": "https://github.com/pdehaan/pontoon-l10n-lint/issues"
   },
   "dependencies": {
-    "convict": "^5.2.0",
+    "convict": "^6.2.3",
     "pontoonql": "github:pdehaan/pontoonql",
     "simple-array-diff": "^1.1.0"
   },
